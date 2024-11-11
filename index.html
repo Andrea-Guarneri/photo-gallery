@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font (Montserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon standard -->
+    <link rel="icon" href="assets/logos/" type="image/x-icon">
+
+    <title>Photography Portfolio</title>
+</head>
+
+<body class="bg-zinc-950 text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-zinc-950 shadow-md p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo Image -->
+            <a href="#" class="flex items-center">
+                <img src="assets/logos/logo-photogallery2.png" alt="Logo" class="h-8 sm:h-10 md:h-12 w-auto">
+            </a>
+            <!-- Navigation Links -->
+            <div class="flex gap-x-2 sm:gap-x-4">
+                <a href="#nature"
+                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51]">Nature</a>
+                <a href="#art"
+                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51]">Art</a>
+                <a href="#events"
+                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51]">Travel</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-t from-zinc-950 to-zinc-700 h-64 flex items-center justify-center text-center ">
+        <!-- Filter Section -->
+        <section class="container mx-auto mt-8 hidden md:flex justify-center">
+            <div class="flex justify-center gap-x-4">
+                <!-- Link buttons to corresponding sections -->
+                <a href="#nature" class="text-xl px-4 py-2 text-gray-400 hover:text-[#E76F51]">Nature</a>
+                <a href="#art" class="text-xl px-4 py-2 text-gray-400 hover:text-[#E76F51]">Art</a>
+                <a href="#events" class="text-xl px-4 py-2 text-gray-400 hover:text-[#E76F51]">Travel</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Gallery Grid Photos Cards-->
+    <section class="container mx-auto p-4">
+
+        <!-- Nature Section -->
+        <div id="nature" class="mt-10 mb-8 cursor-pointer">
+            <h2 class="text-2xl font-bold mb-4">Nature</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Nature Photo Card-1 -->
+                <div class="relative group">
+                    <img src="assets/photos/nature/mark-harpur-K2s_YE031CA-unsplash.jpg" alt="Nature Photo"
+                        class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                    <!-- Overlay Container for Hover Content -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                        <!-- Category Label -->
+                        <p class="text-[#E76F51] text-xl font-semibold">Purple nature</p>
+
+                        <!-- Author and Description -->
+                        <div class="text-center text-gray-300 text-sm sm:text-base">
+                            <p class="font-semibold">Photo by <span
+                                    class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Mark
+                                    Harpur</span></p>
+                            <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                                laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda delectus
+                                vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature Photo Card-2 -->
+                <div class="relative group">
+                    <img src="assets/photos/nature/sunsutNaples.jpg" alt="Nature Photo"
+                        class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                    <!-- Overlay Container for Hover Content -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                        <!-- Category Label -->
+                        <p class="text-[#E76F51] text-xl font-semibold">Naples sunset</p>
+
+                        <!-- Author and Description -->
+                        <div class="text-center text-gray-300 text-sm sm:text-base">
+                            <p class="font-semibold">Photo by <span
+                                    class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Jacob
+                                    Dyer</span></p>
+                            <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                                laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda delectus
+                                vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature Photo Card-3 -->
+                <div class="relative group">
+                    <img src="assets/photos/nature/giorgio-parravicini-12IHVEFRacQ-unsplash (1).jpg" alt="Nature Photo"
+                        class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                    <!-- Overlay Container for Hover Content -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                        <!-- Category Label -->
+                        <p class="text-[#E76F51] text-xl font-semibold">Desert Sun</p>
+
+                        <!-- Author and Description -->
+                        <div class="text-center text-gray-300 text-sm sm:text-base">
+                            <p class="font-semibold">Photo by <span
+                                    class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Giorgio
+                                    Parravicini</span></p>
+                            <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                                laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda delectus
+                                vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature Photo Card-4 -->
+                <div class="relative group">
+                    <img src="assets/photos/nature/sergei-a-EiuR8rzBD-o-unsplash.jpg" alt="Nature Photo"
+                        class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                    <!-- Overlay Container for Hover Content -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                        <!-- Category Label -->
+                        <p class="text-[#E76F51] text-xl font-semibold">Mountain lake</p>
+
+                        <!-- Author and Description -->
+                        <div class="text-center text-gray-300 text-sm sm:text-base">
+                            <p class="font-semibold">Photo by <span
+                                    class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Tom
+                                    Gainor</span></p>
+                            <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                                laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda delectus
+                                vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature Photo Card-5 -->
+                <div class="relative group">
+                    <img src="assets/photos/nature/david-clode-Q-8jreAEa-4-unsplash.jpg" alt="Nature Photo"
+                        class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                    <!-- Overlay Container for Hover Content -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                        <!-- Category Label -->
+                        <p class="text-[#E76F51] text-xl font-semibold">Colorful bird</p>
+
+                        <!-- Author and Description -->
+                        <div class="text-center text-gray-300 text-sm sm:text-base">
+                            <p class="font-semibold">Photo by <span
+                                    class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">David
+                                    Clode</span></p>
+                            <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                                laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda delectus
+                                vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nature Photo Card-6 -->
+                <div class="relative group">
+                    <img src="assets/photos/nature/david-clode-xNpxB9bfLUE-unsplash.jpg" alt="Nature Photo"
+                        class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                    <!-- Overlay Container for Hover Content -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                        <!-- Category Label -->
+                        <p class="text-[#E76F51] text-xl font-semibold">Colorful Fish</p>
+
+                        <!-- Author and Description -->
+                        <div class="text-center text-gray-300 text-sm sm:text-base">
+                            <p class="font-semibold">Photo by <span
+                                    class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">David
+                                    Clode</span></p>
+                            <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+                                laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda delectus
+                                vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Art Section -->
+            <div id="art" class="mt-10 mb-8">
+                <h2 class="text-2xl font-bold mb-4">Art</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Artravel Photo Card-1 -->
+                    <div class="relative group">
+                        <img src="assets/photos/art/anna-kolosyuk-D5nh6mCW52c-unsplash.jpg" alt="Art Photo"
+                            class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                        <!-- Overlay Container for Hover Content -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                            <!-- Category Label -->
+                            <p class="text-[#E76F51] text-xl font-semibold">Dirty brushes</p>
+
+                            <!-- Author and Description -->
+                            <div class="text-center text-gray-300 text-sm sm:text-base">
+                                <p class="font-semibold">Photo by <span
+                                        class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Anna
+                                        Kolosyuk</span></p>
+                                <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ullam
+                                    laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                    delectus
+                                    vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art Photo Card-2 -->
+                    <div class="relative group">
+                        <img src="assets/photos/art/luigi-boccardo-OGSbrFW_dos-unsplash.jpg" alt="Art Photo"
+                            class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                        <!-- Overlay Container for Hover Content -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                            <!-- Category Label -->
+                            <p class="text-[#E76F51] text-xl font-semibold">Angels</p>
+
+                            <!-- Author and Description -->
+                            <div class="text-center text-gray-300 text-sm sm:text-base">
+                                <p class="font-semibold">Photo by <span
+                                        class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Luigi
+                                        Boccardo</span></p>
+                                <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ullam
+                                    laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                    delectus
+                                    vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art Photo Card-3 -->
+                    <div class="relative group">
+                        <img src="assets/photos/art/images.jpeg" alt="Art Photo"
+                            class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                        <!-- Overlay Container for Hover Content -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                            <!-- Category Label -->
+                            <p class="text-[#E76F51] text-xl font-semibold">Eyes in art</p>
+
+                            <!-- Author and Description -->
+                            <div class="text-center text-gray-300 text-sm sm:text-base">
+                                <p class="font-semibold">Photo by <span
+                                        class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Joe
+                                        Down</span></p>
+                                <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ullam
+                                    laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                    delectus
+                                    vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art Photo Card-4 -->
+                    <div class="relative group">
+                        <img src="assets/photos/art/asli-yaren-peker-bD6j_33Vg8I-unsplash.jpg" alt="Art Photo"
+                            class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                        <!-- Overlay Container for Hover Content -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                            <!-- Category Label -->
+                            <p class="text-[#E76F51] text-xl font-semibold">Turkish lights</p>
+
+                            <!-- Author and Description -->
+                            <div class="text-center text-gray-300 text-sm sm:text-base">
+                                <p class="font-semibold">Photo by <span
+                                        class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Asli
+                                        Yaren</span></p>
+                                <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ullam
+                                    laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                    delectus
+                                    vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art Photo Card-5 -->
+                    <div class="relative group">
+                        <img src="assets/photos/art/daniel-zbroja-Aeji-E5S19E-unsplash.jpg" alt="Art Photo"
+                            class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                        <!-- Overlay Container for Hover Content -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                            <!-- Category Label -->
+                            <p class="text-[#E76F51] text-xl font-semibold">Pantheon</p>
+
+                            <!-- Author and Description -->
+                            <div class="text-center text-gray-300 text-sm sm:text-base">
+                                <p class="font-semibold">Photo by <span
+                                        class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Daniel
+                                        Zbroja</span></p>
+                                <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ullam
+                                    laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                    delectus
+                                    vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Art Photo Card-6 -->
+                    <div class="relative group">
+                        <img src="assets/photos/art/_Pino_Restful_2005.jpg" alt="Art Photo"
+                            class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                        <!-- Overlay Container for Hover Content -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                            <!-- Category Label -->
+                            <p class="text-[#E76F51] text-xl font-semibold">Woman resting</p>
+
+                            <!-- Author and Description -->
+                            <div class="text-center text-gray-300 text-sm sm:text-base">
+                                <p class="font-semibold">Photo by <span
+                                        class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Pino
+                                        Restful</span></p>
+                                <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ullam
+                                    laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                    delectus
+                                    vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque quia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel -->
+                <div id="events" class="mt-10 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Travel</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <!-- Travel Photo Card-1 -->
+                        <div class="relative group">
+                            <img src="assets/photos/travel/kyle-hinkson-xyXcGADvAwE-unsplash.jpg" alt="Travel Photo"
+                                class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                            <!-- Overlay Container for Hover Content -->
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                                <!-- Category Label -->
+                                <p class="text-[#E76F51] text-xl font-semibold">Peruvian Market</p>
+
+                                <!-- Author and Description -->
+                                <div class="text-center text-gray-300 text-sm sm:text-base">
+                                    <p class="font-semibold">Photo by <span
+                                            class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Kyle
+                                            Hinks</span></p>
+                                    <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Ullam
+                                        laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                        delectus
+                                        vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque
+                                        quia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Photo Card-2 -->
+                        <div class="relative group">
+                            <img src="assets/photos/travel/ross-parmly-rf6ywHVkrlY-unsplash.jpg" alt="Travel Photo"
+                                class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                            <!-- Overlay Container for Hover Content -->
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                                <!-- Category Label -->
+                                <p class="text-[#E76F51] text-xl font-semibold">Airplane wing</p>
+
+                                <!-- Author and Description -->
+                                <div class="text-center text-gray-300 text-sm sm:text-base">
+                                    <p class="font-semibold">Photo by <span
+                                            class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Ross
+                                            Parmly</span></p>
+                                    <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Ullam
+                                        laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                        delectus
+                                        vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque
+                                        quia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Photo Card-3 -->
+                        <div class="relative group">
+                            <img src="assets/photos/travel/sorasak-_UIN-pFfJ7c-unsplash.jpg" alt="Travel Photo"
+                                class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                            <!-- Overlay Container for Hover Content -->
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                                <!-- Category Label -->
+                                <p class="text-[#E76F51] text-xl font-semibold">Japanese glimpse</p>
+
+                                <!-- Author and Description -->
+                                <div class="text-center text-gray-300 text-sm sm:text-base">
+                                    <p class="font-semibold">Photo by <span
+                                            class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Sorasak</span>
+                                    </p>
+                                    <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Ullam
+                                        laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                        delectus
+                                        vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque
+                                        quia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Photo Card-4 -->
+                        <div class="relative group">
+                            <img src="assets/photos/travel/alexander-kunze-uLh71gTmZ4g-unsplash.jpg" alt="Travel Photo"
+                                class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                            <!-- Overlay Container for Hover Content -->
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                                <!-- Category Label -->
+                                <p class="text-[#E76F51] text-xl font-semibold">Cuban Roads</p>
+
+                                <!-- Author and Description -->
+                                <div class="text-center text-gray-300 text-sm sm:text-base">
+                                    <p class="font-semibold">Photo by <span
+                                            class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Alexander
+                                            Kunze</span></p>
+                                    <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Ullam
+                                        laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                        delectus
+                                        vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque
+                                        quia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Photo Card-5 -->
+                        <div class="relative group">
+                            <img src="assets/photos/travel/simon-berger-boyXZfqpwpU-unsplash.jpg" alt="Travel Photo"
+                                class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                            <!-- Overlay Container for Hover Content -->
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                                <!-- Category Label -->
+                                <p class="text-[#E76F51] text-xl font-semibold">Pyramids sunset</p>
+
+                                <!-- Author and Description -->
+                                <div class="text-center text-gray-300 text-sm sm:text-base">
+                                    <p class="font-semibold">Photo by <span
+                                            class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Simon
+                                            Berger</span></p>
+                                    <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Ullam
+                                        laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                        delectus
+                                        vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque
+                                        quia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Travel Photo Card-6 -->
+                        <div class="relative group">
+                            <img src="assets/photos/travel/peter-livesey-WEME5LOrLpE-unsplash.jpg" alt="Travel Photo"
+                                class="w-full h-64 object-cover rounded shadow-lg transition duration-300 transform group-hover:scale-105">
+
+                            <!-- Overlay Container for Hover Content -->
+                            <div
+                                class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4 space-y-2">
+
+                                <!-- Category Label -->
+                                <p class="text-[#E76F51] text-xl font-semibold">Peruvian Market</p>
+
+                                <!-- Author and Description -->
+                                <div class="text-center text-gray-300 text-sm sm:text-base">
+                                    <p class="font-semibold">Photo by <span
+                                            class="text-gray-300 cursor-pointer text-gray-400 hover:text-red-600">Peter
+                                            Livesey</span></p>
+                                    <p class="line-clamp-2 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Ullam
+                                        laborum perspiciatis alias, id provident rem, maxime accusamus sequi assumenda
+                                        delectus
+                                        vero? Tempore obcaecati placeat tenetur blanditiis eveniet praesentium, atque
+                                        quia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-zinc-950 to-zinc-700 text-white text-center py-4">
+        <!-- Development Logo Image -->
+        <img src="assets/logos/andrea-g-logo-text-white.png" alt="Logo di Andrea Guarneri"
+            class="mx-auto h-8 w-auto mb-4">
+        <!-- Development Credit -->
+        <p class="text-sm text-gray-400 mb-2">Developed by Andrea Guarneri</p>
+        <p>&copy; 2024 My Photography Portfolio</p>
+    </footer>
+
+</body>
+
+</html>
