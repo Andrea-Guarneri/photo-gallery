@@ -12,6 +12,8 @@ This gallery features three main sections:
 2. **Art** 🎨 – A curated selection of stunning artwork from various artists.
 3. **Travel** ✈️ - Suggestive photos of corners of the world.
 
+[View the project live](https://photo-gallery-ag.netlify.app/)
+
 The project focuses on creating a seamless user experience across all devices, from desktop to mobile, utilizing responsive design techniques.
 
 ---
@@ -26,22 +28,12 @@ The project focuses on creating a seamless user experience across all devices, f
 
 ## 🚀 Features
 
-- **Fully Responsive Design** 📱 – Optimized for all screen sizes, from mobile to desktop.
+- **Fully Responsive Design** 📱 💻 – Optimized for all screen sizes, from mobile to desktop.
 - **Smooth Layout** 🌟 – Images and content are neatly aligned for a clean, easy-to-navigate experience.
-- **Nature & Art Sections** 🌿🎨 – Displaying beautiful photos and artwork with grid layout.
+- **Nature & Art and Travel Sections** 🌿 🎨 ✈️ – Displaying beautiful photos and artwork with grid layout.
 
 ---
 
-## 📂 Project Structure
-
-```bash
-.
-├── index.html      # Main HTML file
-├── styles.css      # Custom CSS
-├── tailwind.css    # Tailwind CSS file (if used locally)
-└── images/         # Directory for images
-
 ## 🧑‍💻 Author
 
-This project is created and maintained by Andrea Guarneri. You can view my LinkedIn profile here: `www.linkedin.com/in/andreaguarneri`.
-```
+For those interested in connecting professionally, feel free to reach out on [LinkedIn](https://www.linkedin.com/in/andreaguarneri).
