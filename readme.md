@@ -1,6 +1,6 @@
 # 📸 Photo Gallery Project
 
-Welcome to my **Photo Gallery** project! This is a fully responsive photo gallery designed with a focus on both **nature** ,**art** and **Travel** themes. The gallery is built using **HTML**, **CSS**, and **Tailwind CSS**, ensuring a modern and visually appealing layout.
+Welcome to my **Photo Gallery** project! This is a fully responsive photo gallery designed with a focus on both **nature**, **art** and **Travel** themes. The gallery is built using **HTML**, **CSS**, and **Tailwind CSS**, ensuring a modern and visually appealing layout.
 
 ---
 
