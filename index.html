@@ -43,10 +43,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-gradient-to-t from-zinc-950 to-zinc-700 h-64 flex items-center justify-center text-center ">
+    <header class="relative h-screen bg-cover bg-center bg-[url('assets/photos/banner/banner-2.jpg')]">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 to-zinc-700 opacity-70"></div>
+
+        <!-- Banner Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold">Capture the World Through the Lens</h1>
+            <p class="mt-4 text-lg md:text-2xl text-gray-300">Explore nature, art, and travel in vivid detail</p>
+        </div>
+
         <!-- Filter Section -->
-        <section class="container mx-auto mt-8 hidden md:flex justify-center">
-            <div class="flex justify-center gap-x-4">
+        <section class="relative z-10 mt-8 hidden md:flex justify-center">
+            <div class="flex gap-x-4">
                 <!-- Link buttons to corresponding sections -->
                 <a href="#nature" class="text-xl px-4 py-2 text-gray-400 hover:text-[#E76F51]">Nature</a>
                 <a href="#art" class="text-xl px-4 py-2 text-gray-400 hover:text-[#E76F51]">Art</a>
