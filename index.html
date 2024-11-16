@@ -31,19 +31,19 @@
                 <img src="assets/logos/logo-photogallery2.png" alt="Logo" class="h-8 sm:h-10 md:h-12 w-auto">
             </a>
             <!-- Navigation Links -->
-            <div class="flex gap-x-2 sm:gap-x-4">
+            <div class="flex gap-x-2 sm:gap-x-4 cursor-pointer">
                 <a href="#nature"
-                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51]">Nature</a>
+                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51] cursor-pointer">Nature</a>
                 <a href="#art"
-                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51]">Art</a>
-                <a href="#events"
-                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51]">Travel</a>
+                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51] cursor-pointer">Art</a>
+                <a href="#travel"
+                    class="text-sm sm:text-base md:text-xl px-2 sm:px-3 md:px-4 py-1 sm:py-2 text-gray-400 hover:text-[#E76F51] cursor-pointer">Travel</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative h-screen bg-cover bg-center bg-[url('assets/photos/banner/banner-2.jpg')]">
+    <header class="relative h-[80vh] bg-cover bg-center bg-[url('assets/photos/banner/banner-2.jpg')]">
 
         <!-- Overlay -->
         <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 to-zinc-700 opacity-70"></div>
@@ -52,6 +52,12 @@
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
             <h1 class="text-5xl md:text-7xl font-bold">Capture the World Through the Lens</h1>
             <p class="mt-4 text-lg md:text-2xl text-gray-300">Explore nature, art, and travel in vivid detail</p>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute flex flex-col items-center bottom-6 left-1/2 transform -translate-x-1/2">
+            <span class="mb-2 text-sm">Scroll Down</span>
+            <img src="assets/icons/arrow-down.png" alt="Scroll Down Arrow" class="w-6 h-6 animate-bounce">
         </div>
 
         <!-- Filter Section -->
